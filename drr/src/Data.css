@@ -1,0 +1,105 @@
+/* Table container styles */
+body{
+    background-color: azure;
+}
+.table-container {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    background-color: beige;
+  }
+  
+  /* Table styles */
+  .custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black;
+  }
+  
+  /* Table header row styles */
+  .custom-table th {
+    background-color: #f2f2f2;
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  /* Table data row styles */
+  .custom-table td {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  /* Alternating row colors */
+  .custom-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+}
+.saved-input {
+    border: none; 
+    background-color: beige;
+}
+.saved-textarea {
+    border: none; 
+    background-color: beige;
+}
+.saved-datepicker {
+    border: none;
+}
+
+.button-1 {
+  background-color: #fff000;
+  border-radius: 12px;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-align: center;
+  transition: 200ms;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-bottom: 20px;
+}
+
+.button-1:not(:disabled):hover,
+.button-1:not(:disabled):focus {
+  outline: 0;
+  background: #f4e603;
+  box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
+}
+
+.button-1:disabled {
+  filter: saturate(0.2) opacity(0.5);
+  -webkit-filter: saturate(0.2) opacity(0.5);
+  cursor: not-allowed;
+}
+.save{
+    background-color: green;
+    color: white;
+    border-radius: 2px;
+    width: 70px;
+    border: 1px solid black;
+}
+.cancel{
+    background-color: red;
+    color: white;
+    border-radius: 2px;
+    width: 70px;
+    border: 1px solid black;
+}
+.save:hover{
+    cursor: pointer;
+}
+.cancel:hover{
+    cursor: pointer;
+}
