@@ -1,4 +1,4 @@
-/* Table container styles */
+
 body{
     background-color: azure;
 }
@@ -10,14 +10,13 @@ body{
     background-color: beige;
   }
   
-  /* Table styles */
   .custom-table {
     width: 100%;
     border-collapse: collapse;
     border: 1px solid black;
   }
   
-  /* Table header row styles */
+
   .custom-table th {
     background-color: #f2f2f2;
     border: 1px solid black;
@@ -25,14 +24,12 @@ body{
     padding: 8px;
   }
   
-  /* Table data row styles */
   .custom-table td {
     border: 1px solid black;
     text-align: left;
     padding: 8px;
   }
   
-  /* Alternating row colors */
   .custom-table tbody tr:nth-child(even) {
     background-color: #f2f2f2;
   }

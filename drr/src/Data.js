@@ -146,7 +146,6 @@ const TablePage = () => {
             <button onClick={addNewRow} className='button-1'>Add new</button>
             <table className="custom-table">
                 <thead>
-                    {/* ... header code ... */}
                     <tr>
                         <th>ID</th>
                         <th>Start Date</th>
@@ -170,7 +169,7 @@ const TablePage = () => {
                                     onChange={handleStartDateChange}
                                     dateFormat="yyyy-MM-dd"
                                     disabled={row.isSaved}
-                                    className={row.isSaved ? 'saved-datepicker' : 'unsaved-datepicker'} // Define the CSS classes
+                                    className={row.isSaved ? 'saved-datepicker' : 'unsaved-datepicker'} 
                                 />
                             </td>
                             <td>
@@ -190,7 +189,7 @@ const TablePage = () => {
                                     value={row.excludedDates.join(', ')}
                                     onChange={(e) => handleExcludedDatesChange(e.target.value, row.id)}
                                     readOnly={row.isSaved}
-                                    className={row.isSaved ? 'saved-textarea' : 'unsaved-textarea'} // Define the CSS classes
+                                    className={row.isSaved ? 'saved-textarea' : 'unsaved-textarea'} 
                                 />
                             </td>
                             <td>{row.days}</td>
@@ -201,7 +200,7 @@ const TablePage = () => {
                                     value={row.leadCount}
                                     onChange={(e) => handleLeadCountChange(e.target.value, row.id)}
                                     readOnly={row.isSaved}
-                                    className={row.isSaved ? 'saved-input' : 'unsaved-input'} // Define the CSS classes
+                                    className={row.isSaved ? 'saved-input' : 'unsaved-input'} 
                                 />
                             </td>
                             <td>{row.isSaved ? row.expectedDRR.toFixed(1) : '-'}</td>
